@@ -1,0 +1,9 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contactform{
+    width: 60%;
+    font-size: xx-large;
+    background-color: lightgray;
+}
