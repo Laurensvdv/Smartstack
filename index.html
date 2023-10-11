@@ -4,17 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="CSS/home.css">
+    <!-- <link rel="stylesheet" href="CSS/home.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web">
+
+
+    <style>
+        body{
+            background-color: #6b1b1b;
+            font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: auto;
+            gap: 1rem;
+            margin: 2rem;
+            justify-items: center;
+            background-color: #aa2020;
+        }
+        h1{
+            color: white;
+            font-size: 5rem;
+            font-weight: bold;
+            padding: 2% 0 1% 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav{
+            padding: 1rem;
+            a{
+                font-size: 27px;
+                color: wheat;
+                border: solid rgb(200, 200, 200);
+                background-color: #6b1b1b;
+                text-decoration: none;
+                padding: 5px;
+            }
+        }
+        h2{
+            color: white;
+            font-size: 4rem;
+            font-weight: 200;
+            margin: 0 0 1rem;
+            text-align: center;
+        }
+        p{
+            color: white;
+            font-size: 1rem;
+        }
+    </style>
   </head>
 <body>
-    <div>
+    <div class="container">
         <h1>LAURENS VAN DE VEN</h1>
         <nav><a href="over_mij.html">Karakter </a><a href="">Levensloop </a><a href="">Gewenste functie</a><a href=""> CV </a><a href="">Contactformulier</a></nav>
-        <!-- <img src="Pictures/portret1.jpg" alt="profielfoto Laurens van de Ven"> -->
-        <p>Op zoek naar</p>
-        <p>Functie in IT development.</p>
-        <h2>Gewenste functie</h2>
-        <p class="container">Ontwikkelaar</p>
+        <img src="Pictures/portret1.jpg" alt="profielfoto Laurens van de Ven">
+        <p>Op zoek naar functie als:</p>
+        <h2>Programmeur</h2>
     </div>
 </body>
 </html>
