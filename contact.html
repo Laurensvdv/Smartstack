@@ -1,73 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="CSS/global.css">
-    <style>
-        body{
-            background-color: #6b1b1b;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .contactform{
-            margin: auto;
-            width: 60%;
-            font-size: xx-large;
-            background-color: #be5a5a;
-            display: grid;
-            grid-template-columns: auto;
-            padding: 1rem;
-        }
-        .grid{
-            display: grid;
-            grid-template-columns: auto auto;
-            gap: 5px;
-            padding: 5px;
-        }
-        .button{
-            background-color: lightgreen;
-            justify-self: center;
-            padding: 5px 1rem;
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/global.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="Hobbys.html">Hobby's </a>
+      <a href="levensloop.html">Levensloop </a>
+      <a href="cv.html"> CV </a>
+      <a href="#" class="active">Contact</a>
+    </nav>
     <main class="container">
-        <div class="contactform">
-            <h1>Contactformulier</h1>
-            <div class="grid">
-                <input type="checkbox" id="question1" name="question1">
-                <p>Ik heb een concrete functie voor je</p>
-                <input type="checkbox" id="question2" name="question2">
-                <p>Ik heb nog een vraag aan je</p>
-                <input type="checkbox" id="question3" name="question3">
-                <p>Ik wil graag nog meer van je weten</p>
-            </div>
-        <form action="" class="grid">
-    
-            <label for="name">Naam</label>
-            <input type="text" id="name" name="name">
-    
-            <label for="company">Bedrijf</label>
-            <input type="text" id="company" name="company">
-    
-            <label for="job">Functie</label>
-            <input type="text" id="job" name="job">
-    
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-    
-            <label for="phone_number">GSM</label>
-            <input type="text" id="phone_number" name="phone_number">
-            <div>
-            <label for="reaction">Opmerking</label>
-            </div>
-            <textarea id="reaction" name="reaction" rows="5"></textarea>
-        </form>
-        <div class="button">SEND</div>
+      <h1 class="h1white">Contactformulier</h1>
+
+      <form
+        method="post"
+        class="contactform"
+        action="https://tm-statweb.be/sendmail.php"
+      >
+        <div class="flex">
+          <p>Ik heb:</p>
+          <input
+            type="radio"
+            id="question1"
+            name="question1"
+            value="een functie voor jou"
+          />
+          <p>een functie voor jou</p>
+          <input
+            type="radio"
+            id="question2"
+            name="question2"
+            value="een vraag voor jou"
+          />
+          <p>een vraag voor jou</p>
         </div>
+        <div>
+          <div>
+            <label for="name"
+              >Naam:
+              <input type="text" id="name" name="name" />
+            </label>
+          </div>
+          <div>
+            <label for="company"
+              >Bedrijf:
+              <input type="text" id="company" name="company" />
+            </label>
+          </div>
+          <div>
+            <label for="job"
+              >Functie:
+              <input type="text" id="job" name="job" />
+            </label>
+          </div>
+          <div>
+            <label for="email"
+              >Email:
+              <input type="email" id="email" name="email" />
+            </label>
+          </div>
+          <div>
+            <label for="phone_number"
+              >GSM:
+              <input type="text" id="phone_number" name="phone_number" />
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <label for="reaction" id="block">Opmerking:</label>
+          <textarea id="reaction" name="reaction" rows="5"></textarea>
+
+          <input
+            type="hidden"
+            name="studentemail"
+            value="smartstack@telenet.be"
+          />
+          <div>
+            <input type="submit" value="Bevestigen" class="button" />
+          </div>
+        </div>
+      </form>
     </main>
-</body>
+  </body>
 </html>

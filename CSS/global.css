@@ -1,9 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Titillium+Web);
 
 body {
-  background-color: #6b1b1b;
-  font-family: "Titillium Web", "Segoe UI", Tahoma, Geneva, Verdana,
-    sans-serif;
+  background-color: #692020;
+  font-family: "Titillium Web", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .container {
   display: grid;
@@ -61,21 +60,78 @@ nav {
   text-align: center;
 }
 
-
 /* Karakter */
 
-.switchbox{
+.switchbox {
   display: grid;
   grid-template-columns: 50% auto;
   padding-bottom: 1rem;
   justify-items: center;
 }
 
-.switchbox_item{
-  h2{
+.switchbox_item {
+  h2 {
     color: white;
-  font-size: 2rem;
-  text-align: center;
-  margin: 1rem auto 0 auto;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem auto 0 auto;
   }
+}
+
+/* CV */
+
+.container-light {
+  width: 90%;
+  background-color: #e28888;
+  margin: auto;
+  padding: 1rem;
+  th {
+    font-size: 26px;
+    padding: 1rem;
+    text-align: left;
+  }
+}
+
+
+/* Contact */
+
+.contactform {
+  margin: auto;
+  width: 70%;
+  font-size: xx-large;
+  background-color: #e28888;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 1rem;
+  margin: 1rem;
+  p{
+    color: black;
+    font-size: 1.5rem;
+  }
+  border: solid rgb(200, 200, 200);
+  border-radius: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+  padding: 5px;
+}
+.button {
+  background-color: lightgreen;
+  justify-self: center;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  grid-column: 1 / span 2;
+}
+
+#block{
+  display: block;
 }
